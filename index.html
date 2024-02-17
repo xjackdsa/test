@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222; /* Цвет фона */
+            color: #fff; /* Цвет текста */
+        }
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Темная тема для блока кода */
+        pre {
+            background-color: #333; /* Цвет фона блока кода */
+            color: #fff; /* Цвет текста в блоке кода */
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px; /* закругление углов */
+            border: 1px solid #555; /* обводка блока кода */
+        }
+        code {
+            font-family: Consolas, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JS Doc</h1>
+    </header>
+    <nav>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#usage">Usage</a>
+        <a href="#examples">Examples</a>
+    </nav>
+    <main>
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <p>Welcome to our documentation site. Follow these steps to get started:</p>
+            <pre><code class="language-bash">npm install my-package</code></pre>
+        </section>
+        
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>To use our package, import it into your project:</p>
+            <pre><code class="language-javascript">const myPackage = require('my-package');</code></pre>
+        </section>
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Here are some examples of how to use our package:</p>
+            <pre><code class="language-javascript">const result = myPackage.doSomething();</code></pre>
+        </section>
+    </main>
+</body>
+</html>
